@@ -1,0 +1,72 @@
+#lbmessage{
+ -fx-font-size:10.5px;
+ -fx-background-color:rgb(32,74,135);
+ -fx-text-fill:rgb(255,255,255);
+ -fx-padding: 8 8 8 8;
+ -fx-background-radius: 10;
+ -fx-border-color: rgb(32,74,135);
+ -fx-border-radius: 10;
+}
+.label{
+  -fx-font-size: 15.0px;
+  -fx-padding: 8 8 8 8;
+  -fx-text-fill:rgb(92,53,102);
+}
+.button{
+ -fx-font-size:15.0px;
+ -fx-background-color:rgb(115,210,22);
+ -fx-padding: 8 8 8 8;
+ -fx-background-radius: 10;
+ -fx-border-color: rgb(32,74,135);
+ -fx-border-radius: 10;
+}
+#btn1{
+   -fx-font-size:10.5px;
+   -fx-background-color:rgb(115,210,22);
+   -fx-padding: 8 8 8 8;
+   -fx-background-radius: 10;
+   -fx-border-color: rgb(32,74,135);
+   -fx-border-radius: 10;
+}
+#updateEmployee{
+ -fx-text-fill:white;
+ -fx-font-size:15.0px;
+ -fx-background-color: #ff4d4d;
+ -fx-padding: 8 8 8 8;
+ -fx-background-radius: 10;
+ -fx-border-color: rgb(32,74,135);
+ -fx-border-radius: 10;
+}
+#deleteEmployee{
+ -fx-text-fill:white;
+ -fx-font-size:15.0px;
+ -fx-background-color: #ff4d4d;
+ -fx-padding: 8 8 8 8;
+ -fx-background-radius: 10;
+ -fx-border-color: rgb(32,74,135);
+ -fx-border-radius: 10;
+}
+#tf1{
+ -fx-font-size:15.0px;
+ -fx-background-color:rgb(32,74,135);
+ -fx-text-fill:rgb(255,255,255);
+ -fx-padding: 8 8 8 8;
+ -fx-background-radius: 10;
+ -fx-border-color: rgb(32,74,135);
+ -fx-border-radius: 10;
+}
+#tf2{
+   -fx-font-size:15.0px;
+   -fx-background-color:rgb(32,74,135);
+   -fx-text-fill:rgb(255,255,255);
+   -fx-padding: 8 8 8 8;
+   -fx-background-radius: 10;
+   -fx-border-color: rgb(32,74,135);
+   -fx-border-radius: 10;
+}
+#lb4{
+  -fx-text-fill:rgb(204,0,0);
+}
+#lb5{
+ -fx-text-fill:rgb(204,0,0);
+}

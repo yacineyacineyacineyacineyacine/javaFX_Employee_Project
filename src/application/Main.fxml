@@ -17,9 +17,9 @@
             <Label layoutX="22.0" layoutY="32.0" text="username" />
             <Label layoutX="23.0" layoutY="89.0" text="password" />
             <Label fx:id="dbConLb" layoutX="205.0" layoutY="333.0" prefHeight="37.0" prefWidth="173.0" text="Label" />
-            <Label layoutX="204.0" layoutY="163.0" text="check" />
+            <Label fx:id="check" layoutX="120.0" layoutY="163.0" prefHeight="37.0" prefWidth="213.0" />
             <Button layoutX="439.0" layoutY="332.0" mnemonicParsing="false" onAction="#statusDB" text="Check DB" />
-            <Button layoutX="446.0" layoutY="31.0" mnemonicParsing="false" text="Enter" />
+            <Button fx:id="enter" layoutX="446.0" layoutY="31.0" mnemonicParsing="false" onAction="#enterCP" text="Enter" />
             <TextField fx:id="username" layoutX="116.0" layoutY="31.0" prefHeight="39.0" prefWidth="213.0" />
             <TextField fx:id="password" layoutX="116.0" layoutY="89.0" prefHeight="37.0" prefWidth="213.0" />
             <ImageView fitHeight="225.0" fitWidth="213.0" layoutX="366.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">

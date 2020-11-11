@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlPanel">
+   <children>
+      <Pane prefHeight="497.0" prefWidth="756.0">
+         <children>
+            <Label layoutX="319.0" layoutY="26.0" prefHeight="37.0" prefWidth="221.0" text="Conrol Panel" />
+            <Button layoutX="57.0" layoutY="96.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="123.0" text="View Employee" />
+            <Button layoutX="57.0" layoutY="227.0" mnemonicParsing="false" text="Update / Delete" />
+            <Button layoutX="57.0" layoutY="370.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="123.0" text="Insert" />
+            <ImageView fitHeight="373.0" fitWidth="378.0" layoutX="354.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/employees.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

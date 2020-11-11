@@ -2,8 +2,12 @@ package application;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.awt.*;
 import java.io.IOException;
@@ -48,6 +52,15 @@ public class Login {
                   String val2 = map.get(username.getText().trim());
                   if(val2.equals(password.getText().trim()));
                   check.setText("Success");
+
+                  AdminsDB.getConnection();
+                  Stage primaryStage = new Stage();
+                  Parent root = FXMLLoader.load(getClass().getResource("/application/ControlPanel.fxml"));
+
+                  Scene scene = new Scene(root,  756, 497);
+                  scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+                  primaryStage.setScene(scene);
+                  primaryStage.show();
               }else {
                   check.setText("Failed try again");
               }

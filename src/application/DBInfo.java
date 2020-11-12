@@ -20,7 +20,7 @@ public class DBInfo {
 
     public static int save(Employee emp){
         int st =0;
-        String sql = "INSERT INTO employee(fname, lname, salary, age, departement, address, date_of_birth, gender, education, experience, contract_start, contract_end, nationality, mother_lunguage, other_lunguage) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO employee (fname, name, salary, age, departement, address, date_of_birth, gender, education, experience, contract_start, contract_end, nationality, mother_lunguage, other_lunguage) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
         Connection connection = DBInfo.getConnection();
         try {
@@ -50,7 +50,7 @@ public class DBInfo {
     }
     public static int update(Employee emp){
         int st =0;
-        String sql = "UPDATE employee SET fname=?, lname=?, salary=?, age=?, departement=?, address=?, date_of_birth=?, gender=?, education=?, experience=?, contract_start=?, contract_end=?, nationality=?, mother_lunguage=?, other_lunguage=? WHERE id=?";
+        String sql = "UPDATE employee SET fname=?, name=?, salary=?, age=?, departement=?, address=?, date_of_birth=?, gender=?, education=?, experience=?, contract_start=?, contract_end=?, nationality=?, mother_lunguage=?, other_lunguage=? WHERE id=?";
 
         Connection connection = DBInfo.getConnection();
         try {

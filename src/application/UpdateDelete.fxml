@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UpdateDeleteEmployee">
+
+    <children>
+        <AnchorPane layoutX="-3.0" prefHeight="548.0" prefWidth="843.0">
+            <children>
+                <Label layoutX="339.0" layoutY="30.0" prefHeight="37.0" prefWidth="189.0" text="Update / Delete Employee" />
+                <Label layoutX="42.0" layoutY="73.0" text="First name" />
+                <Label layoutX="43.0" layoutY="129.0" text="Last name" />
+                <Label layoutX="44.0" layoutY="186.0" text="Salary" />
+                <Label layoutX="51.0" layoutY="244.0" text="Age" />
+                <Label layoutX="36.0" layoutY="302.0" text="Department" />
+                <Label layoutX="37.0" layoutY="361.0" text="Address" />
+                <Label layoutX="34.0" layoutY="411.0" text="Date of Birth" />
+                <Label layoutX="37.0" layoutY="468.0" text="Gender" />
+                <Label layoutX="408.0" layoutY="73.0" text="Education" />
+                <Label layoutX="405.0" layoutY="129.0" text="Experience" />
+                <Label layoutX="400.0" layoutY="186.0" text="Contract start" />
+                <Label layoutX="398.0" layoutY="244.0" text="Contract end" />
+                <Label layoutX="409.0" layoutY="302.0" text="Nationality" />
+                <Label layoutX="386.0" layoutY="351.0" text="Mothe language" />
+                <Label layoutX="389.0" layoutY="398.0" text="Other language" />
+                <TextField fx:id="fname" layoutX="150.0" layoutY="79.0" prefHeight="25.0" prefWidth="178.0" />
+                <TextField fx:id="lname" layoutX="150.0" layoutY="135.0" prefHeight="25.0" prefWidth="178.0" />
+                <TextField fx:id="salary" layoutX="150.0" layoutY="192.0" prefHeight="25.0" prefWidth="178.0" />
+                <TextField fx:id="age" layoutX="150.0" layoutY="250.0" prefHeight="25.0" prefWidth="178.0" />
+                <TextField fx:id="department" layoutX="150.0" layoutY="308.0" prefHeight="25.0" prefWidth="178.0" />
+                <TextField fx:id="address" layoutX="150.0" layoutY="367.0" prefHeight="25.0" prefWidth="178.0" />
+                <TextField fx:id="gender" layoutX="150.0" layoutY="474.0" prefHeight="25.0" prefWidth="178.0" />
+                <TextField fx:id="education" layoutX="521.0" layoutY="79.0" prefHeight="25.0" prefWidth="178.0" />
+                <TextField fx:id="experience" layoutX="521.0" layoutY="135.0" prefHeight="25.0" prefWidth="178.0" />
+                <TextField fx:id="nationality" layoutX="521.0" layoutY="302.0" prefHeight="25.0" prefWidth="178.0" />
+                <TextField fx:id="mother_language" layoutX="521.0" layoutY="357.0" prefHeight="25.0" prefWidth="178.0" />
+                <TextField fx:id="other_language" layoutX="521.0" layoutY="404.0" prefHeight="25.0" prefWidth="178.0" />
+                <Button layoutX="523.0" layoutY="449.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="174.0" text="update employee" />
+            <TextField fx:id="date_of_birth" layoutX="150.0" layoutY="423.0" prefHeight="25.0" prefWidth="178.0" />
+            <TextField fx:id="contract_start" layoutX="521.0" layoutY="192.0" prefHeight="25.0" prefWidth="178.0" />
+            <TextField fx:id="contract_end" layoutX="521.0" layoutY="250.0" prefHeight="25.0" prefWidth="178.0" />
+            <Button layoutX="523.0" layoutY="499.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="174.0" text="delete employee" />
+            <Label layoutX="59.0" layoutY="22.0" text="ID" />
+            <TextField fx:id="id" layoutX="150.0" layoutY="36.0" prefHeight="25.0" prefWidth="56.0" />
+            <Button layoutX="233.0" layoutY="29.0" mnemonicParsing="false" onAction="#getEmployeeById" prefHeight="25.0" prefWidth="70.0" text="find" />
+            </children>
+        </AnchorPane>
+    </children>
+
+</AnchorPane>

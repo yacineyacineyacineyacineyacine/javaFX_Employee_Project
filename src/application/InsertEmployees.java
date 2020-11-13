@@ -2,6 +2,7 @@ package application;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
@@ -78,6 +79,14 @@ public class InsertEmployees {
         employee.setMother_language(motherLanguage);
         employee.setOther_language(otherLanguage);
         if(DBInfo.save(employee) > 0){
+
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Data Insert");
+            alert.setHeaderText("Information Dialog");
+            alert.setContentText("Record saved successfully!");
+
+            alert.showAndWait();
+
             fname.setText("");
             lname.setText("");
             salary.setText("");
@@ -93,11 +102,16 @@ public class InsertEmployees {
             date_of_birth.setValue(null);
             contract_start.setValue(null);
             contract_end.setValue(null);
-        };
-       // String sql  = "INSERT INTO `employee` (fname, lname, salary, age, departement, address, date_of_birth, gender, education, experience, contract_start, contract_end, nationality, mother_language, other_language) Values ()";
+        }else {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Data Insert");
+            alert.setHeaderText("ERROR Dialog");
+            alert.setContentText("Sorry unable to saved record!");
 
-
-
+            alert.showAndWait();
+        }
 
     }
+
+
 }

@@ -13,7 +13,7 @@
          <children>
             <Label layoutX="319.0" layoutY="26.0" prefHeight="37.0" prefWidth="221.0" text="Conrol Panel" />
             <Button layoutX="57.0" layoutY="96.0" mnemonicParsing="false" onAction="#viewEmployee" prefHeight="39.0" prefWidth="123.0" text="View Employee" />
-            <Button layoutX="57.0" layoutY="227.0" mnemonicParsing="false" text="Update / Delete" />
+            <Button layoutX="57.0" layoutY="227.0" mnemonicParsing="false" onAction="#updateDeleteEmployee" text="Update / Delete" />
             <Button layoutX="57.0" layoutY="370.0" mnemonicParsing="false" onAction="#InsertEmployee" prefHeight="39.0" prefWidth="123.0" text="Insert" />
             <ImageView fitHeight="373.0" fitWidth="378.0" layoutX="354.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
                <image>

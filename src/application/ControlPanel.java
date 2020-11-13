@@ -45,5 +45,22 @@ public class ControlPanel {
 
     }
 
+    public void updateDeleteEmployee(ActionEvent event){
+        AdminsDB.getConnection();
+        Stage primaryStage = new Stage();
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("/application/UpdateDelete.fxml"));
+
+            Scene scene = new Scene(root,  843, 548);
+            scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
 
 }

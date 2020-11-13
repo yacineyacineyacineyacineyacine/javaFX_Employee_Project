@@ -39,11 +39,11 @@
                 <TextField fx:id="nationality" layoutX="521.0" layoutY="302.0" prefHeight="25.0" prefWidth="178.0" />
                 <TextField fx:id="mother_language" layoutX="521.0" layoutY="357.0" prefHeight="25.0" prefWidth="178.0" />
                 <TextField fx:id="other_language" layoutX="521.0" layoutY="404.0" prefHeight="25.0" prefWidth="178.0" />
-                <Button layoutX="523.0" layoutY="449.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="174.0" text="update employee" />
+                <Button layoutX="523.0" layoutY="449.0" mnemonicParsing="false" onAction="#updateEmploye" prefHeight="25.0" prefWidth="174.0" text="update employee" />
             <TextField fx:id="date_of_birth" layoutX="150.0" layoutY="423.0" prefHeight="25.0" prefWidth="178.0" />
             <TextField fx:id="contract_start" layoutX="521.0" layoutY="192.0" prefHeight="25.0" prefWidth="178.0" />
             <TextField fx:id="contract_end" layoutX="521.0" layoutY="250.0" prefHeight="25.0" prefWidth="178.0" />
-            <Button layoutX="523.0" layoutY="499.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="174.0" text="delete employee" />
+            <Button layoutX="523.0" layoutY="499.0" mnemonicParsing="false" onAction="#deleteEmployee" prefHeight="25.0" prefWidth="174.0" text="delete employee" />
             <Label layoutX="59.0" layoutY="22.0" text="ID" />
             <TextField fx:id="id" layoutX="150.0" layoutY="36.0" prefHeight="25.0" prefWidth="56.0" />
             <Button layoutX="233.0" layoutY="29.0" mnemonicParsing="false" onAction="#getEmployeeById" prefHeight="25.0" prefWidth="70.0" text="find" />
